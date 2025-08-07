@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Big Bass Bonanza</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('cover.png') center center no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .btn {
+            background-color: #ffcc00;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="cover.png" alt="Big Bass" width="400" class="pulse">
+    <button class="btn" onclick="window.location.href='terms.html'">I am 18+</button>
+</body>
+</html>
